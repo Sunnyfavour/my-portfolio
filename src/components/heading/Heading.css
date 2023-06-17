@@ -1,0 +1,25 @@
+.heading{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e3d41e7;
+    padding: 120px 20px;
+    margin-top: 40px; */
+
+    text-align: center;
+    background-color: #181818;
+    padding: 120px 20px;
+    /* margin-top: 40px; */
+
+}
+h1 {
+    font-family:"poppins" sans-serif;
+    color:  #258ffa;
+    color:  #7fa7cf;
+    font-size: 45px;
+}
+p {
+    color: #abcae9;
+    padding-top: 20px ;
+}
