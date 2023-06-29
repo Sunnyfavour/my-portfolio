@@ -7,12 +7,20 @@
 body {
   background: var(--color-bg);
 }
+svg {
+  position: absolute;
+  z-index: 1;
+}
+#svg1{
+  justify-content: baseline;
+}
 a {
   color: unset;
   text-decoration: none;
 }
 .gradient{
-  background: black;
+  /* background: black; */
+  background:  #0d1117;
 }
 
 .gradient__text {

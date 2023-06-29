@@ -11,25 +11,33 @@
     flex: 1;
     justify-content: flex-start;
     align-items: baseline;
-
 }
 .menu__container{
-    margin-left: 1rem;
-
     display: none;
-    position: relative;
+    align-items: center;
+}
+.menu__container svg {
+    cursor: pointer;
+    position: inherit;
+    align-items: center;
+    justify-content: center;
+
 }
 h3 {
     color:  #7fa7cf;
     font: 10;
     font-family: sans-serif;
     padding-right: 20px;
+    justify-content: flex-end;
 }
 .navbar__links__container{
     display:  flex;
     justify-content: flex-end;
     flex-direction: row;
-    padding-left: 300px;
+    /* padding-left: 300px; */
+    flex: 1;
+
+    /* margin-left: 90px; */
 }
 .navbar__links__container p{
     color: #fff;
@@ -40,4 +48,72 @@ h3 {
     justify-content: flex-end;
     margin: 0 1rem;
     cursor: pointer;
+}
+.navbar__links__container p:hover{
+    background: #7fa7cf;
+    font-weight: bolder;
+}
+.togglemenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: #7fa7cf;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgb(0,0,0,0,2);
+
+}
+.togglemenu p{
+    padding: 10px;
+
+}
+.togglemenu p:hover{
+    background: #7fa7cf;
+    color: white;
+    /* padding: 10px; */
+}
+@media screen and (max-width: 600px){
+    .navbar__links__container{
+        display: none;
+    }
+    .menu__container{
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding-right: 40px;
+        top: 10px;
+        justify-content:center;
+        align-items: baseline;
+
+    }
+    .menu__container svg {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        top: 20px;
+
+    }
+    h3 {
+        color:  #7fa7cf;
+        font: 20px;
+        font-size: small;
+        font-family: sans-serif;
+        padding-right: 80px;
+        justify-content: flex-end;
+        justify-content: center;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+    }
 }

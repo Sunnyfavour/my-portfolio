@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
 import "./navbar.css"
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 const Menu = () => (
     <>
-      <p><a href="#Home">Home</a></p>
-      <p><a href="#Project">Projects</a></p>
-      <p><a href="#About">About</a></p>
-      <p><a href="#Blog">Contact</a></p>
+      <Link to="#Home" smooth><p>Home</p></Link>
+      <Link to="#project" smooth><p>Projects</p></Link>
+      <Link to="#About" smooth><p>About</p></Link>
+      <Link to="#contact" smooth><p>Contact</p></Link>
     </>
-    
   ) 
 
 const Navbar = () => {
 
     const [ toggleMenu,setToggleMenu] = useState(false)
   return (
-    <div className='navbar'>
+    <BrowserRouter>
+      <div className='navbar'>
         <div className='navbar__links'>
             <div>
                 <h3>
@@ -33,9 +35,9 @@ const Navbar = () => {
           : <RiMenuLine color='#fff' size={27} onClick={() => setToggleMenu(true)} />
           }
            {toggleMenu && (
-          <div className='gpt3__navbar-menu_container scale-up-center'>
+          <div className='togglemenu scale-up-center'>
 
-            <div className='gpt3__navbar-menu_container-links'>
+            <div className='togglemenu__links'>
               <Menu />
               {/* you can see the menu list at    the top */}
             </div>
@@ -46,6 +48,7 @@ const Navbar = () => {
             </div>
         </div>
     </div>
+    </BrowserRouter>
   )
 }
 

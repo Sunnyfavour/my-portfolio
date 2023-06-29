@@ -1,0 +1,31 @@
+.contact__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact__links{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.links{
+    margin: 20px;
+}
+.links a{
+    text-decoration: dotted;
+    color: blue;
+}
+.links a:hover{
+    font-weight: bolder;
+}
+.font{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+.font .font__icon{
+    width: 20px;
+    height: 20px;
+}
